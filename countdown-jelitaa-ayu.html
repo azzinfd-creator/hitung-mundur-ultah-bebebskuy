@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#080a12">
+<title>To Jelitaa Ayu ✦</title>
+<style>
+:root{color-scheme:dark;--muted:#a5a9bd;--white:#f4f2ff;--glow:#b7a5ff}
+*{box-sizing:border-box}
+body{margin:0;min-height:100svh;overflow:hidden;background:radial-gradient(ellipse at 50% 45%,#17172c 0%,#0b0d18 48%,#05060b 100%);color:var(--white);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;display:grid;place-items:center}
+body:before{content:"";position:fixed;inset:0;opacity:.5;background-image:radial-gradient(1px 1px at 12% 18%,#fff 99%,transparent),radial-gradient(1px 1px at 76% 23%,#fff 99%,transparent),radial-gradient(2px 2px at 88% 73%,#b9b4ff 99%,transparent),radial-gradient(1px 1px at 31% 82%,#fff 99%,transparent),radial-gradient(1px 1px at 57% 11%,#fff 99%,transparent),radial-gradient(1px 1px at 8% 67%,#fff 99%,transparent);background-size:310px 270px;pointer-events:none}
+.wrap{position:relative;width:min(92vw,680px);text-align:center;padding:42px 22px 34px;z-index:1}
+.eyebrow{font-size:10px;letter-spacing:.34em;text-transform:uppercase;color:#aaa7c6;margin-bottom:18px}
+h1{font-size:clamp(32px,7vw,58px);line-height:1.06;letter-spacing:-.055em;margin:0;font-weight:650}
+h1 span{color:#c5b7ff;text-shadow:0 0 30px #a28aff55}
+.sub{color:var(--muted);font-size:13px;letter-spacing:.04em;margin:16px 0 34px}
+.clock{font-variant-numeric:tabular-nums;font-size:clamp(17px,4vw,23px);letter-spacing:.13em;color:#e6e0ff;margin-bottom:9px}
+.clock-label{font-size:9px;letter-spacing:.28em;text-transform:uppercase;color:#777b96}
+.countdown{display:flex;justify-content:center;gap:clamp(10px,3vw,25px);margin:35px 0 29px}
+.unit{min-width:62px}
+.num{font-size:clamp(35px,9vw,61px);font-weight:300;letter-spacing:-.06em;line-height:1;color:#f7f4ff;text-shadow:0 0 28px #aa9aff33}
+.unit small{display:block;margin-top:11px;font-size:9px;letter-spacing:.2em;color:#8e91aa}
+.separator{font-size:30px;font-weight:200;color:#625c80;margin-top:1px}
+.note{font-size:12px;color:#8d90a8;letter-spacing:.04em}
+.note b{color:#d5cbff;font-weight:500}
+.orbit-scene{position:relative;height:160px;margin:0 auto 22px;width:min(100%,440px);perspective:600px}
+.orbit{position:absolute;left:50%;top:50%;border:1px solid #aaa2d51c;border-radius:50%;transform:translate(-50%,-50%) rotate(-18deg)}
+.orbit.one{width:210px;height:78px}.orbit.two{width:310px;height:112px;transform:translate(-50%,-50%) rotate(22deg)}.orbit.three{width:410px;height:145px;transform:translate(-50%,-50%) rotate(-9deg)}
+.sun{position:absolute;left:50%;top:50%;width:49px;height:49px;border-radius:50%;transform:translate(-50%,-50%);background:radial-gradient(circle at 32% 28%,#fff4da,#d4b7ff 35%,#7460a8 72%,#382e5b);box-shadow:0 0 24px #b89cff88,0 0 65px #9d7cff3d}
+.planet{position:absolute;border-radius:50%;animation:float 5s ease-in-out infinite}
+.p1{width:13px;height:13px;left:calc(50% + 102px);top:calc(50% - 31px);background:linear-gradient(135deg,#f5c7a5,#a76b85 65%,#533c67);box-shadow:0 0 13px #e8b5d877}
+.p2{width:20px;height:20px;left:calc(50% - 148px);top:calc(50% + 4px);background:linear-gradient(135deg,#c4d8ff,#777bb5 60%,#34365d);animation-delay:-2s;box-shadow:0 0 15px #a9baff66}
+.p3{width:9px;height:9px;left:calc(50% + 195px);top:calc(50% - 12px);background:#e6c9a0;animation-delay:-3s;box-shadow:0 0 12px #f4d8a077}
+.star{position:absolute;color:#d6caff;font-size:12px;animation:twinkle 3s ease-in-out infinite}
+.s1{left:18%;top:24%}.s2{right:17%;bottom:20%;animation-delay:-1.3s}.s3{left:29%;bottom:10%;animation-delay:-2s}
+@keyframes float{0%,100%{translate:0 0}50%{translate:0 -7px}}
+@keyframes twinkle{0%,100%{opacity:.25;transform:scale(.8)}50%{opacity:1;transform:scale(1.25)}}
+.footer{margin-top:35px;color:#555a73;font-size:9px;letter-spacing:.24em;text-transform:uppercase}
+@media(max-width:420px){.orbit-scene{height:135px}.orbit.three{width:330px}.orbit.two{width:260px}.orbit.one{width:180px}.p3{left:calc(50% + 155px)}.countdown{gap:8px}.unit{min-width:55px}.separator{font-size:22px}}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <div class="eyebrow">a little universe made for you</div>
+  <h1>Counting down to<br><span>Jelitaa Ayu’s day</span></h1>
+  <p class="sub">19 November 2026 · the day gets a little brighter</p>
+  <div class="orbit-scene" aria-hidden="true">
+    <div class="orbit one"></div><div class="orbit two"></div><div class="orbit three"></div>
+    <div class="sun"></div><div class="planet p1"></div><div class="planet p2"></div><div class="planet p3"></div>
+    <span class="star s1">✦</span><span class="star s2">✧</span><span class="star s3">✦</span>
+  </div>
+  <div class="clock" id="clock">00:00:00</div>
+  <div class="clock-label">current time · jakarta</div>
+  <section class="countdown" aria-label="Hitung mundur">
+    <div class="unit"><div class="num" id="days">00</div><small>HARI</small></div>
+    <div class="separator">:</div>
+    <div class="unit"><div class="num" id="hours">00</div><small>JAM</small></div>
+    <div class="separator">:</div>
+    <div class="unit"><div class="num" id="minutes">00</div><small>MENIT</small></div>
+    <div class="separator">:</div>
+    <div class="unit"><div class="num" id="seconds">00</div><small>DETIK</small></div>
+  </section>
+  <div class="note" id="message">one more orbit around the sun, <b>for you.</b> ♡</div>
+  <div class="footer">made with a little bit of stardust</div>
+</main>
+<script>
+const target = new Date('2026-11-19T00:00:00+07:00').getTime();
+const $ = id => document.getElementById(id);
+const pad = n => String(n).padStart(2,'0');
+function tick(){
+  const now = new Date();
+  $('clock').textContent = new Intl.DateTimeFormat('id-ID',{timeZone:'Asia/Jakarta',hour:'2-digit',minute:'2-digit',second:'2-digit',hour12:false}).format(now);
+  let diff = Math.max(0,target-Date.now());
+  const d=Math.floor(diff/86400000); diff%=86400000;
+  const h=Math.floor(diff/3600000); diff%=3600000;
+  const m=Math.floor(diff/60000); const s=Math.floor((diff%60000)/1000);
+  $('days').textContent=pad(d);$('hours').textContent=pad(h);$('minutes').textContent=pad(m);$('seconds').textContent=pad(s);
+  if(target-Date.now()<=0){$('message').innerHTML='today is your day, <b>Jelitaa Ayu.</b> ♡';}
+}
+tick();setInterval(tick,1000);
+</script>
+</body>
+</html>
